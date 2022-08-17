@@ -6,3 +6,4 @@ search_text = '2022-01-01'
 for path in folder.glob('**/*.csv'):
     if search_text in path.name:
         print(path)
+        print(path.absolute())
